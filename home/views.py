@@ -10,3 +10,13 @@ class Index(View):
 class About(View):
     def get(self, request):
         return render(request, 'home/about.html')
+
+
+class Services(View):
+    def get(self, request):
+        return render(request, 'home/services.html')
+
+
+class Portfolio(View):
+    def get(self, request):
+        return render(request, 'home/portfolio.html')
