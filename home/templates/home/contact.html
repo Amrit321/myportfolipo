@@ -3,7 +3,6 @@
 
 {% block content %}
 
-
 <body>
 
 
@@ -53,10 +52,10 @@
 <div class="banner_inner d-flex align-items-center">
 <div class="container">
 <div class="banner_content text-center">
-<h2>Portfolio</h2>
+<h2>Contact Us</h2>
 <div class="page_link">
 <a href="{% url 'index' %}">Home</a>
-<a href="{% url 'portfolio' %}">Portfolio</a>
+<a href="{% url 'contact' %}">Contact</a>
 </div>
 </div>
 </div>
@@ -65,106 +64,62 @@
 </section>
 
 
-<section class="home_gallery_area p_120">
+<section class="contact_area p_120">
 <div class="container">
-<div class="main_title">
-<h2>Our Latest Featured Projects</h2>
-<p>Who are in extremely love with eco friendly system.</p>
+<div class="mapBox" data-zoom="13">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6860.372803352004!2d84.03687674964523!3d28.18702121172566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995963c60072847%3A0xe8c9c5a090b6ee40!2zMjjCsDExJzA0LjgiTiA4NMKwMDInMzAuNyJF!5e0!3m2!1sen!2snp!4v1611898331441!5m2!1sen!2snp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
-<div class="isotope_fillter">
-<ul class="gallery_filter list">
-<li class="active" data-filter="*"><a href="#">All</a></li>
-<li data-filter=".brand"><a href="#">Vector</a></li>
-<li data-filter=".manipul"><a href="#">Raster</a></li>
-<li data-filter=".creative"><a href="#">UI/UX</a></li>
-<li data-filter=".design"><a href="#">Printing</a></li>
-</ul>
+
+
+<div class="row">
+<div class="col-lg-3">
+<div class="contact_info">
+<div class="info_item">
+<i class="lnr lnr-home"></i>
+<h6>City-Ward, Country</h6>
+<p>Tole</p>
 </div>
+<div class="info_item">
+<i class="lnr lnr-phone-handset"></i>
+<h6><a href="#">Phone</a></h6>
+<p>Sun to Fri 9am to 6 pm</p>
 </div>
-<div class="container">
-<div class="gallery_f_inner row imageGallery1">
-<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-<div class="h_gallery_item">
-<div class="g_img_item">
-<img class="img-fluid" src="img/gallery/project-1.jpg" alt="">
-<a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
-</div>
-<div class="g_item_text">
-<h4>3D Helmet Design</h4>
-<p>Client Project</p>
+<div class="info_item">
+ <i class="lnr lnr-envelope"></i>
+<h6><a href="#"><span class="__cf_email__" data-cfemail="097a7c7979667b7d496a6665667b65606b276a6664">Email</span></a></h6>
+<p>Send us your query anytime!</p>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
-<div class="h_gallery_item">
-<div class="g_img_item">
-<img class="img-fluid" src="img/gallery/project-2.jpg" alt="">
-<a class="light" href="img/gallery/project-2.jpg"><img src="img/gallery/icon.png" alt=""></a>
+<div class="col-lg-9">
+<form class="row contact_form" action="#" method="post" id="contactForm" novalidate="novalidate">
+<div class="col-md-6">
+<div class="form-group">
+<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
 </div>
-<div class="g_item_text">
-<h4>2D Vinyl Design</h4>
-<p>Client Project</p>
+<div class="form-group">
+<input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
 </div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
-<div class="h_gallery_item">
-<div class="g_img_item">
-<img class="img-fluid" src="img/gallery/project-3.jpg" alt="">
-<a class="light" href="img/gallery/project-3.jpg"><img src="img/gallery/icon.png" alt=""></a>
-</div>
-<div class="g_item_text">
-<h4>Creative Poster Design</h4>
-<p>Client Project</p>
+<div class="form-group">
+<input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
 </div>
 </div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6 brand creative print">
-<div class="h_gallery_item">
-<div class="g_img_item">
-<img class="img-fluid" src="img/gallery/project-4.jpg" alt="">
-<a class="light" href="img/gallery/project-4.jpg"><img src="img/gallery/icon.png" alt=""></a>
-</div>
-<div class="g_item_text">
-<h4>Embosed Logo Design</h4>
-<p>Client Project</p>
+<div class="col-md-6">
+<div class="form-group">
+<textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
 </div>
 </div>
+<div class="col-md-12 text-right">
+<button type="submit" value="submit" class="btn submit_btn">Send Message</button>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design">
-<div class="h_gallery_item">
-<div class="g_img_item">
-<img class="img-fluid" src="img/gallery/project-5.jpg" alt="">
-<a class="light" href="img/gallery/project-5.jpg"><img src="img/gallery/icon.png" alt=""></a>
+</form>
 </div>
-<div class="g_item_text">
-<h4>3D Disposable Bottle</h4>
-<p>Client Project</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
-<div class="h_gallery_item">
-<div class="g_img_item">
-<img class="img-fluid" src="img/gallery/project-6.jpg" alt="">
-<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
-</div>
-<div class="g_item_text">
-<h4>3D Logo Design</h4>
-<p>Client Project</p>
-</div>
-</div>
-</div>
-</div>
-<div class="more_btn">
-<a class="main_btn" href="#">Load More Items</a>
 </div>
 </div>
 </section>
-
 
 <footer class="footer_area p_120">
-<div class="container">
+	<div class="container">
 <div class="row footer_inner">
 <div class="col-lg-5 col-sm-6">
 <aside class="f_widget ab_widget">
@@ -173,7 +128,7 @@
 </div>
 <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
 <p>
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+Copyright &copy;<script data-cfasync="false" src="#"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Amrit Chapagain</a>
 </p>
 </aside>
 </div>
@@ -183,7 +138,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <h3>Newsletter</h3>
 </div>
 <p>Stay updated with our latest trends</p>
- <div id="mc_embed_signup">
+<div id="mc_embed_signup">
 <form target="_blank" action="#" method="get" class="subscribe_form relative">
 <div class="input-group d-flex flex-row">
 <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
@@ -210,10 +165,38 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 </div>
 </div>
+
 </footer>
 
-{% endblock content %}
 
+<div id="success" class="modal modal-message fade" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<i class="fa fa-close"></i>
+</button>
+<h2>Thank you</h2>
+<p>Your message is successfully sent...</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="error" class="modal modal-message fade" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<i class="fa fa-close"></i>
+</button>
+<h2>Sorry !</h2>
+<p> Something went wrong </p>
+</div>
+</div>
+</div>
+</div>
+{% endblock content %}
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

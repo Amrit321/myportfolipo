@@ -37,7 +37,7 @@
 <li class="nav-item"><a class="nav-link" href="#">Blog Details</a></li>
 </ul>
 </li>
-<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
 </ul>
 </div>
 </div>
@@ -226,7 +226,52 @@
 
 
 <footer class="footer_area p_120">
-<?php include 'footer.php'; ?>
+<div class="container">
+<div class="row footer_inner">
+<div class="col-lg-5 col-sm-6">
+<aside class="f_widget ab_widget">
+<div class="f_title">
+<h3>About Me</h3>
+</div>
+<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+<p>
+Copyright &copy;<script data-cfasync="false" src="#"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Amrit Chapagain</a>
+</p>
+</aside>
+</div>
+<div class="col-lg-5 col-sm-6">
+<aside class="f_widget news_widget">
+<div class="f_title">
+<h3>Newsletter</h3>
+</div>
+<p>Stay updated with our latest trends</p>
+<div id="mc_embed_signup">
+<form target="_blank" action="#" method="#" class="subscribe_form relative">
+<div class="input-group d-flex flex-row">
+<input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+<button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>
+</div>
+<div class="mt-10 info"></div>
+</form>
+</div>
+</aside>
+</div>
+<div class="col-lg-2">
+<aside class="f_widget social_widget">
+<div class="f_title">
+<h3>Follow Me</h3>
+</div>
+<p>Let us be social</p>
+<ul class="list">
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+<li><a href="#"><i class="fa fa-behance"></i></a></li>
+</ul>
+</aside>
+</div>
+</div>
+</div>
 </footer>
 
 {% endblock content %}
@@ -238,7 +283,6 @@
 
   gtag('config', 'UA-23581568-13');
 </script>
-</body>
 
 
-</html>
+

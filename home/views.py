@@ -20,3 +20,7 @@ class Services(View):
 class Portfolio(View):
     def get(self, request):
         return render(request, 'home/portfolio.html')
+
+class Contact(View):
+    def get(self, request):
+        return render(request, 'home/contact.html')
