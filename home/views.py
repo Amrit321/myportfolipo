@@ -24,3 +24,15 @@ class Portfolio(View):
 class Contact(View):
     def get(self, request):
         return render(request, 'home/contact.html')
+
+
+class Blogs(View):
+    def get(self, request):
+        return render(request, 'home/blogs.html')
+
+
+class BlogDetail(View):
+    def get(self, request):
+        return render(request, 'home/blog_detail.html')
+
+

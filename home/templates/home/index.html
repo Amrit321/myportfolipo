@@ -3,7 +3,6 @@
 
 {% block content %}
 <body>
-
 <header class="header_area">
 <div class="main_menu">
 <nav class="navbar navbar-expand-lg navbar-light">
@@ -32,8 +31,8 @@
 <li class="nav-item submenu dropdown">
 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
 <ul class="dropdown-menu">
-<li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Blog Details</a></li>
+<li class="nav-item"><a class="nav-link" href="{% url 'blogs' %}">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="{% url 'blog_detail' %}">Blog Details</a></li>
 </ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
