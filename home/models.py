@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Personal_info(models.Model):
     name = models.CharField(max_length=20)
     email = models.EmailField(max_length=50)
@@ -25,5 +26,8 @@ class Blog(models.Model):
     date = models.DateField()
 
 
+class Services(models.Model):
+    service = models.CharField(max_length=50)
+    detail = models.TextField()
 
 
