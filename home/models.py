@@ -4,7 +4,7 @@ from django.db import models
 class Personal_info(models.Model):
     name = models.CharField(max_length=20)
     email = models.EmailField(max_length=50)
-    phone = models.PositiveIntegerField()
+    phone = models.PositiveBigIntegerField()
     image = models.ImageField(upload_to='media/personal/')
     address = models.CharField(max_length=50)
     post = models.CharField(max_length=50)
@@ -29,5 +29,12 @@ class Blog(models.Model):
 class Services(models.Model):
     service = models.CharField(max_length=50)
     detail = models.TextField()
+
+
+class Portfolio(models.Model):
+    title = models.CharField(max_length=100)
+    detail = models.TextField()
+    image = models.ImageField(upload_to='media/portfolio/')
+
 
 
